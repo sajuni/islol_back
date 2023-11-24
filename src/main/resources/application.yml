@@ -12,8 +12,13 @@ spring:
         format_sql: true #To beautify or pretty print the SQL
         show_sql: true #show sql
 
-logging:
-  level:
-    org.hibernate:
-      type.descriptor.sql: trace #show parameter binding
-      SQL: DEBUG
+jwt:
+  header: Authorization
+  secret: islolapplicationScretkey
+  tokenExpire: 1800
+
+#logging:
+#  level:
+#    org.hibernate:
+#      type.descriptor.sql: trace #show parameter binding
+#      SQL: DEBUG
